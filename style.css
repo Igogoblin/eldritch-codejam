@@ -1,0 +1,300 @@
+
+body{
+    background-image: url(./assets/home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* display: flex;
+    gap: 20px;
+    
+    justify-content: space-between;
+    width: 100vw; */
+}
+@font-face {
+    font-family: Lugatype;
+    src: url(./fonts/Tkachev\ -\ Lugatype.otf);
+}
+.container{
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 1fr;
+}
+.fobos {
+/* display: flex;
+justify-content: space-around;
+flex-wrap: wrap; */
+
+display: grid;
+grid-template-columns: 10% 10% 10% 10% 10% 10% 10%  ;
+grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+column-gap: 10px;
+row-gap: 5px;
+}
+.first {
+    background-image: url(./assets/Ancients/Azathoth.png);
+    background-size: cover;
+    
+    
+    grid-column: 1/5;
+    grid-row:1/9;
+    max-width: 100%;
+    max-height: 100%;
+    /* height: auto; */
+    
+}
+
+.second {
+    background-image: url(./assets/Ancients/Cthulthu.png);
+    background-size: cover;
+    grid-column: 5/9;
+    grid-row:1/9;
+    /* max-width: 100%; */
+    max-height: 100%;
+    /* min-width: 48%;
+    height: 49%; */
+}
+
+.third {
+    background-image: url(./assets/Ancients/IogSothoth.png);
+    background-size: cover;
+    grid-column: 1/5;
+    grid-row:9/15;
+    /* min-width: 48%;
+    width: 45%;
+    height: 49%; */
+}
+
+.fourth {
+    background-image: url(./assets/Ancients/ShubNiggurath.png);
+    background-size: cover;
+    grid-column: 5/9;
+    grid-row:9/15;
+    /* min-width: 48%;
+    width: 45%;
+    height: 49%; */
+}
+.ad {
+    /* border: 3px solid rgb(255, 60, 0); */
+    border: 5px solid;
+    border-image: linear-gradient(45deg, purple, orange) 1;
+
+
+}
+/* -------------------------------------------------------------------------- */
+.level {
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* font-family: Currency; */
+    
+    font-style: normal;
+    font-weight: 600;
+    color: #908;
+    
+}
+.vlow {
+    border: 1px solid #908; 
+    font-size: 2em; 
+    margin-bottom: 20px;
+}
+.low {
+   border: 1px solid #908; 
+  font-size: 2em;
+}
+.normal {
+    border: 1px solid #908;
+    margin:20px 0;
+    font-size: 2em;
+}
+.high {
+    border: 1px solid #908;
+    font-size: 2em;
+}
+.vhigh {
+    border: 1px solid #908; 
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+
+/* ------------------------------------------------------------------------ */
+.show {
+    display: flex;
+    flex-flow: column;
+}
+.text{
+    font-style: Klingon;
+    color:aliceblue;
+    font-size: 1em;
+}
+.table {
+    height: 40%;
+}
+.first-line {
+    height: 30%;
+    display: flex;
+padding-top: 10%;
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+/* justify-content: center; */
+}
+.box-circle{
+    display: flex;
+    padding-top: 10px;
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 30%;
+    background-color: rgb(255, 60, 0);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.box-circle .circle:first-child{
+    background-color: rgb(29, 139, 103);
+}
+.box-circle .circle:last-child{
+    background-color: rgb(63, 63, 197);
+}
+.second-line {
+    height: 30%;
+    display: flex;
+flex-direction: column;
+}
+.third-line {
+    height: 30%;
+    display: flex;
+flex-direction: column;
+}
+.mix {
+    height: 10%;
+
+}
+.button {
+border: 1px solid blueviolet;
+border-radius: 8px;
+max-width: 200px;
+max-height: 50px;
+height: 100%;
+background-color: rgb(107, 70, 103);
+font-size: 1.5em;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.disappear {
+    opacity: 0;
+}
+.cover {
+    height: 25%;
+    
+}
+.cover-card{
+   background-image: url(./assets/mythicCardBackground.png);
+    background-size: cover; 
+    width: 25%;
+    height: 90%;
+}
+.carta {
+   
+    height: 25%;
+   width: 40%;
+
+}
+.place{
+    background-size: cover;
+    /* max-height: 300px;
+     max-width: 150px; */
+    width: 60%;
+    height: 90%;
+    /* background-color: #fff; */
+}
+
+
+
+/* ========================================================================== */
+.sho {
+    margin: 0;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #42A5F5; */
+    /* color: #fff; */
+  }
+  
+  .checkbox {
+    visibility: hidden;
+  }
+  .checkbox-group {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+  }
+  .checkbox-group:after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    height: 2px;
+    width: 52px;
+    background-color: #111;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+  }
+  .checkbox-label {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    z-index: 1;
+    left: 4px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+  .checkbox-label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.9), 0px 1px 0px rgba(255, 255, 255, 0.8);
+  }
+  .checkbox:checked + .checkbox-label {
+    left: 54px;
+  }
+  .checkbox:checked + .checkbox-label:after {
+    background-color: #27ae60;
+  }
+  
+  .lev {
+    border: 3px solid rgb(116, 41, 13);
+    background-color: rgb(216, 152, 152);
+    border-radius: 5px;
+}
+  
+.none{
+    display: none;
+}

@@ -13,4 +13,6 @@ const difficulties = [
   },
 ]
 
+export let user = 12;
+
 export default difficulties
